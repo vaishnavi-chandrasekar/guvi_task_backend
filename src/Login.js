@@ -20,7 +20,7 @@ function Login() {
           password: password,
         }
       );
-      console.log(response.data);
+      console.log (response.data);
       if (response.data) {
         await localStorage.setItem("token", response.data);
         var currentUser = email;
